@@ -1,0 +1,32 @@
+/* This is the outer element that creates the border */
+.mtsb-button-wrapper {
+    margin: 10px;
+    background-color: white;
+    padding: 2px; 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.mtsb-button-wrapper:hover {
+    transform: scale(1.1);
+}
+
+/* This is the inner, visible button area */
+.mtsb-button {
+    width: 48px;
+    height: 48px;
+    background-color: #111;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The icon itself */
+.mtsb-button .fas {
+    font-size: 20px;
+    color: white;
+}
