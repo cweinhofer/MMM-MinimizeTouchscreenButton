@@ -59,6 +59,7 @@ webPreferences: {
     preload: require("path").join(__dirname, "preload.js") // Bridge for UI and main process
 }
 ```
+note: if you get a syntax error when you start your MagicMirror, you probably forgot to add the comma after `config.zoom` when adding the extra line
 
 (C) At the end of the file, add the `ipcMain` listener. This listenes for the 'MINIMIZE' signal from the module and executes the minimize command.
 
