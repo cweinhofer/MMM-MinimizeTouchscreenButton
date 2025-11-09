@@ -63,6 +63,8 @@ webPreferences: {
 (C) At the end of the file, add the `ipcMain` listener. This listenes for the 'MINIMIZE' signal from the module and executes the minimize command.
 
 ```js
+// --- Inter-Process Communication (IPC) Handlers ---
+
 // Listen for the 'MINIMIZE' signal from the UI.
 ipcMain.on('MINIMIZE', () => {
     if (mainWindow) {
